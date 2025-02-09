@@ -180,7 +180,6 @@ header {
     color: white;
     padding: 80px 20px;
     margin-bottom: 40px;
-    border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -254,8 +253,15 @@ input:valid~label {
 }
 
 .project {
-    background-color: #ccc;
+    background-color: #ffffff;
 }
+
 #projects h2 {
     color: white;
 }
+
+body {
+    background-color: #aaaaaa;
+    font-family: "Roboto", serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
