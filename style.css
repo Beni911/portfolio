@@ -1,57 +1,97 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f0f4f8;
+    color: #333;
 }
 
 h1,
 h2,
 h3 {
-    color: #333;
+    font-family: 'Helvetica', sans-serif;
+    color: #222;
+    font-weight: bold;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     background-color: #333;
+    margin: 0;
+    text-align: center;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin: 0;
 }
 
 nav ul li a {
+    display: inline-block;
+    padding: 15px 20px;
     color: white;
     text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
 }
 
 section {
     padding: 20px;
     margin: 20px;
     background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+section:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 form input,
 form textarea {
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 4px;
     border: 1px solid #ccc;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
 }
 
 form button {
-    padding: 10px 20px;
-    background-color: #333;
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
     color: white;
     border: none;
+    border-radius: 4px;
+    font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 form button:hover {
-    background-color: #555;
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
 }
 
 @media (max-width: 767px) {
@@ -79,4 +119,31 @@ form button:hover {
     form button {
         width: 100%;
     }
+}
+
+.project:hover {
+    background-color: #f1f1f1;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+header {
+    text-align: center;
+    background-color: #007BFF;
+    color: white;
+    padding: 80px 20px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+form input:focus,
+form textarea:focus {
+    border: 2px solid #007BFF;
 }
