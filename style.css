@@ -39,7 +39,14 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #555;
 }
-
+.project a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.project a:hover {
+    color: #0056b3;
+}
 section {
     padding: 20px;
     margin: 20px;
@@ -62,6 +69,7 @@ form textarea {
     border: 1px solid #ccc;
     box-sizing: border-box;
     transition: border-color 0.3s ease;
+    resize: none;
 }
 
 form input:focus,
@@ -121,11 +129,19 @@ footer {
     }
 }
 
+.project {
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
 .project:hover {
     background-color: #f1f1f1;
     transform: translateY(-5px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 header {
